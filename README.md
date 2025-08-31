@@ -3,7 +3,7 @@ The source code and data of EiRA
 
 # Pre-requisite:
 - Python3, numpy, pandas, pytorch(2.6.0+cu118),peft(0.14.0)
-- esm3([https://github.com/facebookresearch/esm](https://github.com/evolutionaryscale/esm))
+- esm3([https://github.com/evolutionaryscale/esm](https://github.com/evolutionaryscale/esm))
 
 # Installation:
 - 1.Download the source code in this repository.
