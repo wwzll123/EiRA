@@ -9,7 +9,7 @@ The source code and data of EiRA
 - 1.Download the source code in this repository.
 - 2.Download the weights of EiRA at [https://huggingface.co/zengwenwu/EiRA](https://huggingface.co/zengwenwu/EiRA/tree/main), and make sure they locate in the same folder.
 
-# Protein Generate like ESM3
+# Protein Generation like ESM3
 
 EiRA inherits the flexible multi-modal editing feature of ESM3 and supports the free combination of multiple tracks of prompts.
 
@@ -22,4 +22,4 @@ EiRA inherits the flexible multi-modal editing feature of ESM3 and supports the 
            --inform_position "The constant residue indices in the template, like: 0,1,2,3,5,6,7,8,9"
 ```
 
-# DNA-condition Protein Generate
+# DNA-conditioned Protein Generation
