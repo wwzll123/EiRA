@@ -56,7 +56,8 @@ def run_design(TnpB_protein_tensor_prompt):
 if __name__ == '__main__':
     model = ESM3.from_pretrained("esm3_sm_open_v1", device=torch.device(config.device))
     model=PeftModel.from_pretrained(model,
-                                    config.weight_dir+os.sep+'DPO_checkpoint_VanillaLora_part_data_no_repeat').to(torch.bfloat16)
+                                    config.weight_dir+os.sep+'DPO_checkpoint_VanillaLora_part_data_no_repeat',
+                                    is_trainable=False).to(torch.bfloat16)
     model.eval()
 
     #load a PDB file and MASK residues
@@ -78,3 +79,4 @@ if __name__ == '__main__':
             designed_seq, plddt, ptm, identity2temp = run_design(TnpB_protein_tensor)
             with open(config.designed_seq_save_path, 'a') as f:
                 f.write(f'>design_{i+1}|plddt:{plddt:.2f}|plddt:{ptm:.2f}|identity:{identity2temp:.2f}\n{designed_seq}\n')
+
