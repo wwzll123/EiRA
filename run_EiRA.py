@@ -16,6 +16,8 @@ parser.add_argument('--weight_dir', type=str,default=r'E:\science\EiRA\model_che
 parser.add_argument('--SRC_PDB_path', type=str,default='./8exa_pdbfix.pdb')
 parser.add_argument('--designed_seq_save_path', type=str, default='./designed_seq.fasta')
 parser.add_argument('--design_num', type=int, default=10)
+parser.add_argument('--device', type=str, default='cuda:0')
+parser.add_argument('--chain', type=str, default='A')
 
 config = parser.parse_args()
 
@@ -52,13 +54,14 @@ def run_design(TnpB_protein_tensor_prompt):
 
 
 if __name__ == '__main__':
-    model = ESM3.from_pretrained("esm3_sm_open_v1", device=torch.device('cuda:0'))
-    model=PeftModel.from_pretrained(model, config.weight_dir+os.sep+'DPO_checkpoint_VanillaLora_part_data_no_repeat').to(torch.bfloat16).cuda()
+    model = ESM3.from_pretrained("esm3_sm_open_v1", device=torch.device(config.device))
+    model=PeftModel.from_pretrained(model,
+                                    config.weight_dir+os.sep+'DPO_checkpoint_VanillaLora_part_data_no_repeat').to(torch.bfloat16)
     model.eval()
 
     #load a PDB file and MASK residues
     prompt_position = torch.tensor(list(map(int,config.inform_position.split(',')))).int()
-    Tnpb_protein = ESMProtein.from_pdb(config.SRC_PDB_path, chain_id='A')
+    Tnpb_protein = ESMProtein.from_pdb(config.SRC_PDB_path, chain_id=config.chain)
     TnpB_protein_tensor = model.encode(Tnpb_protein)
 
     mask = torch.zeros_like(TnpB_protein_tensor.sequence, dtype=torch.bool)
