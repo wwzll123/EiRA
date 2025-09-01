@@ -7,9 +7,9 @@ import biotite.sequence as seq
 import biotite.sequence.align as align
 from esm.sdk.api import GenerationConfig, ESMProtein
 from esm.models.esm3 import ESM3
-from DBP_design.DBP_ESM3 import EiRA_ESM3
+from DBP_ESM3 import EiRA_ESM3
 import argparse
-
+from evo2 import Evo2
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--inform_position', type=str,default='0,1,2,3,5,6,7,8,9')
@@ -114,3 +114,4 @@ if __name__ == '__main__':
             designed_seq, plddt, ptm, identity2temp = run_design(TnpB_protein_tensor,embedding)
             with open(config.designed_seq_save_path, 'a') as f:
                 f.write(f'>design_{i+1}|plddt:{plddt:.2f}|plddt:{ptm:.2f}|identity:{identity2temp:.2f}\n{designed_seq}\n')
+
