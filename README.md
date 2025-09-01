@@ -25,8 +25,8 @@ EiRA inherits the flexible multi-modal editing feature of ESM3 and supports the 
            --chain Template chain (like "A")
 ```
 
-# DNA-conditioned Protein Generation
-Protein editing under DNA conditions (EVO2 embedding)
+# DNA-conditioned DBP Generation
+Protein editing under DNA conditions (EVO2 embedding). 
 
  ```
  $ cd DBPdesign
@@ -38,5 +38,5 @@ Protein editing under DNA conditions (EVO2 embedding)
            --inform_position "The constant residue indices in the template, like: 0,1,2,3,5,6,7,8,9"
            --device cuda:0
            --chain Template chain (like "A")
-           --DNA "DNA sequence, like AGCTCGC"
+           --DNA "Target DNA sequence, like AGCTCGC"
 ```
