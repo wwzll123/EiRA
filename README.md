@@ -26,3 +26,17 @@ EiRA inherits the flexible multi-modal editing feature of ESM3 and supports the 
 ```
 
 # DNA-conditioned Protein Generation
+Protein editing under DNA conditions (EVO2 embedding)
+
+ ```
+ $ cd DBPdesign
+ $ python run_EiRA_withDNA.py \
+           --weight_dir "The local path of the downloaded weight file"
+           --SRC_PDB_path "The path of your template"
+           --designed_seq_save_path "Result path"
+           --design_num "Number of designed sequences"
+           --inform_position "The constant residue indices in the template, like: 0,1,2,3,5,6,7,8,9"
+           --device cuda:0
+           --chain Template chain (like "A")
+           --DNA "DNA sequence, like AGCTCGC"
+```
