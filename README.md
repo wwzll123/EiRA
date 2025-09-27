@@ -41,7 +41,7 @@ Protein editing under DNA conditions (EVO2 embedding).
            --DNA "Target DNA sequence, like AGCTCGC"
 ```
 
-# Domain adaptive pre-training
+# Domain adaptive post-training
 Coming soon...
 
 # Binding site-informed preference optimization
