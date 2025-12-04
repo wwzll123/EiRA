@@ -10,6 +10,13 @@ The source code and data of EiRA
 - 1.Download the source code in this repository.
 - 2.Download the weights of EiRA at [https://huggingface.co/zengwenwu/EiRA](https://huggingface.co/zengwenwu/EiRA/tree/main), and make sure they locate in the same folder.
 
+| name | description | size |
+|:--------|:--------:|-------:|
+| DNAbinder_lora_ft32_DNAlen50_cross_att_DNAtransformer_DNAbinder.pth | DNA transformer and Cross attention weights of DNA-informed EiRA | 2.23G |
+| EiRA_checkpoint DNAbinder_lora_ft32 DNAlen50.zip | LoRA weighht of DNA-informed EiRA | 23.9M |
+| EiRA_checkpoint_vanilla_lora_ft32_repeat_penalty.zip | LoRA wight of EiRA without DPO | 10.1M |
+| DPO_checkpoint VanillaLora_ part data no_repeat.zip | LoRA wight of EiRAD with DPO | 12.1M |
+
 # Protein Generation like ESM3
 
 EiRA inherits the flexible multi-modal editing feature of ESM3 and supports the free combination of multiple tracks of prompts.
