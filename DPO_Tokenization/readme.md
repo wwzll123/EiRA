@@ -12,5 +12,5 @@
            --pro_id "protein id"
            --lora_checkpoint_dir "The path of EiRA checkpoint"
            --sequence "like GPG____GRQEGGEEEKEEA________EA"
-           --save_dir ./
+           --save_dir ./preference_pair
 ```
