@@ -17,7 +17,7 @@ import torch.distributed as dist
 from bitsandbytes.optim import AdamW8bit
 import logging
 
-# torchrun --nproc_per_node=7 --master_port=29512 pretrain_with_noise.py --gpu 0,1,2,3,4,5,6,7
+# torchrun --nproc_per_node=8 --master_port=29512 pretrain_with_noise.py --gpu 0,1,2,3,4,5,6,7
 
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 parser = argparse.ArgumentParser()
