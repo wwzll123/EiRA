@@ -1,7 +1,7 @@
 # A Tutorial of Tokenization
 
 # Pre-requisite:
-- DSSP, InterPro file (https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/protein2ipr.dat.gz)
+- DSSP tool, InterPro file (https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/protein2ipr.dat.gz)
 
 # Material preparation:
 - 1.Prepare a list of [protein IDs](./protein_list.txt) with pdb file.
@@ -20,4 +20,4 @@ We saved the five token in the npz format of numpy using the following commands.
            --ss_json_path ./esm3_DRBP_ss.json
            --target_dir ./token_dir
 ```
-Then you will see the ProID_tokens.npz in [token_dir](./token_dir).
+Then you will see the ProteinID_tokens.npz in [token_dir](./token_dir).
