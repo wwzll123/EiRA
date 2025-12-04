@@ -67,7 +67,7 @@ Protein editing under DNA conditions (EVO2 embedding).
            --num_workers 16
 ```
 
-# Binding site-informed preference optimization
+# 🛠️ Binding site-informed preference optimization
 - 1.Before starting the DPO, you should first read the [DPO Tokenization Tutorial](./DPO_Tokenization) and prepare the preference pair tokens.
 - 2.Run the following command depend on the number of GPUs available to you.
 
