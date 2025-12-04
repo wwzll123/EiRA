@@ -1,7 +1,7 @@
 # A Tutorial of Preference Pair Tokenization for DPO
 
 # Pre-requisite:
-- EiRA CHECKPOINT, peft
+- EiRA checkpoint, peft
 - Prompt Sequence (like 'GPG____GRQEGGEEEKEEA________EAIEKGDWE____KDRLVKM____RLDAV____________VL', where "_" means the residue need generation.)
 
 # Installation:
