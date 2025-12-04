@@ -1,4 +1,7 @@
 # Improved multimodal protein language model-driven universal biomolecules-binding protein design with EiRA
+
+![EiRA](Figure1.png)
+
 The source code and data of EiRA
 
 # Pre-requisite:
