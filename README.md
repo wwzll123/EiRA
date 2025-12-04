@@ -53,7 +53,7 @@ Protein editing under DNA conditions (EVO2 embedding).
 ```
 
 # Domain adaptive post-training
-- 1.Before starting the training, you should first read the [Tokenization tutorial](./Tokenization) and prepare the tokens.
+- 1.Before starting the training, you should first read the [Tokenization Tutorial](./Tokenization) and prepare the tokens.
 - 2.The command should depend on the number of GPUs available to you.
 - 3.Run the following command.
  ```
@@ -69,7 +69,7 @@ Protein editing under DNA conditions (EVO2 embedding).
 ```
 
 # Binding site-informed preference optimization
-- 1.Before starting the DPO, you should first read the [DPO Tokenization tutorial](./DPO_Tokenization) and prepare the preference pair tokens.
+- 1.Before starting the DPO, you should first read the [DPO Tokenization Tutorial](./DPO_Tokenization) and prepare the preference pair tokens.
 
 # Citation
  ```
