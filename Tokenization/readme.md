@@ -4,7 +4,7 @@
 - DSSP tool, InterPro file (https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/protein2ipr.dat.gz)
 
 # Material preparation:
-- 1.Prepare a list of [protein IDs](./protein_list.txt) with pdb file.
+- 1.Prepare a list of [protein IDs](./protein_list.txt) with the pdb file.
 - 2.Use the DSSP tool to calculate the secondary structure and save it in the [example JSON format](./esm3_DRBP_ss.json).
 - 3.Save the InterPro annotations in the [example JSON format](./esm3_UniDRBP40_InterPro.json).
 
