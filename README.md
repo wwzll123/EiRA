@@ -13,9 +13,9 @@ The source code and data of EiRA
 | Name | Description | Size |
 |:--------|:--------:|-------:|
 | DNAbinder_lora_ft32_DNAlen50_cross_att_DNAtransformer_DNAbinder.pth | DNA transformer and Cross attention weights of DNA-informed EiRA | 2.23G |
-| EiRA_checkpoint DNAbinder_lora_ft32 DNAlen50.zip | LoRA weighht of DNA-informed EiRA | 23.9M |
+| EiRA_checkpoint_DNAbinder_lora_ft32_DNAlen50.zip | LoRA weighht of DNA-informed EiRA | 23.9M |
 | EiRA_checkpoint_vanilla_lora_ft32_repeat_penalty.zip | LoRA wight of EiRA without DPO | 10.1M |
-| DPO_checkpoint VanillaLora_ part data no_repeat.zip | LoRA wight of EiRAD with DPO | 12.1M |
+| DPO_checkpoint_VanillaLora_part_data_no_repeat.zip | LoRA wight of EiRAD with DPO | 12.1M |
 
 # Protein Generation like ESM3
 
