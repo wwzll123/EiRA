@@ -2,7 +2,9 @@
 
 ![EiRA](Figure1.png)
 
+---
 **The source code and data of EiRA**
+---
 
 # 🌍 Pre-requisite:
 - Python3, numpy, pandas, pytorch(2.6.0+cu118),peft(0.14.0),bitsandbytes
