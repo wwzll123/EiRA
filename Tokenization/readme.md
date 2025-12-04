@@ -1,11 +1,12 @@
 # A Tutorial of Tokenization
 
 # Pre-requisite:
-- DSSP, InterPro (https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/protein2ipr.dat.gz)
+- DSSP, InterPro file (https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/protein2ipr.dat.gz)
 
 # Material preparation:
-- 1.Prepare a list of [protein IDs](./protein_list.txt).
-- 2.Download the weights of EiRA at [https://huggingface.co/zengwenwu/EiRA](https://huggingface.co/zengwenwu/EiRA/tree/main), and make sure they locate in the same folder.
+- 1.Prepare a list of [protein IDs](./protein_list.txt) with pdb file.
+- 2.Use the DSSP tool to calculate the secondary structure and save it in the [example JSON format](./esm3_DRBP_ss.json).
+- 3.Save the InterPro annotations in the [example JSON format](./esm3_UniDRBP40_InterPro.json).
 
 # Protein Generation like ESM3
 
