@@ -50,9 +50,9 @@ Protein editing under DNA conditions (EVO2 embedding).
 ```
 
 # Domain adaptive post-training
-Before starting the training, you should first read the [Tokenization tutorial](./Tokenization) and prepare the tokens.
-
-The command should depend on the number of GPUs available to you.
+- 1.Before starting the training, you should first read the [Tokenization tutorial](./Tokenization) and prepare the tokens.
+- 2.The command should depend on the number of GPUs available to you.
+- 3.Run the following command.
  ```
  $ torchrun --nproc_per_node=8 --master_port=29512 pretrain.py \
            --gpu 0,1,2,3,4,5,6,7
