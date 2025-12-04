@@ -42,7 +42,7 @@ Protein editing under DNA conditions (EVO2 embedding).
 ```
 
 # Domain adaptive post-training
-Coming soon...
+Before starting the training, you should first prepare the [tokens](./Tokenization).
 
 # Binding site-informed preference optimization
 Coming soon...
