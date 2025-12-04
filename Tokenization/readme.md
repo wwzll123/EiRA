@@ -8,40 +8,16 @@
 - 2.Use the DSSP tool to calculate the secondary structure and save it in the [example JSON format](./esm3_DRBP_ss.json).
 - 3.Save the InterPro annotations in the [example JSON format](./esm3_UniDRBP40_InterPro.json).
 
-# Protein Generation like ESM3
+# Generate token
 
-EiRA inherits the flexible multi-modal editing feature of ESM3 and supports the free combination of multiple tracks of prompts.
-
- ```
- $ python run_EiRA.py \
-           --weight_dir "The local path of the downloaded weight file"
-           --SRC_PDB_path "The path of your template"
-           --designed_seq_save_path "Result path"
-           --design_num "Number of designed sequences"
-           --inform_position "The constant residue indices in the template, like: 0,1,2,3,5,6,7,8,9"
-           --device cuda:0
-           --chain Template chain (like "A")
-```
-
-# DNA-conditioned DBP Generation
-Protein editing under DNA conditions (EVO2 embedding). 
+We saved the five token in the npz format of numpy using the following commands.
 
  ```
- $ cd DBPdesign
- $ python run_EiRA_withDNA.py \
-           --weight_dir "The local path of the downloaded weight file"
-           --SRC_PDB_path "The path of your template"
-           --designed_seq_save_path "Result path"
-           --design_num "Number of designed sequences"
-           --inform_position "The constant residue indices in the template, like: 0,1,2,3,5,6,7,8,9"
-           --device cuda:0
-           --chain Template chain (like "A")
-           --DNA "Target DNA sequence, like AGCTCGC"
+ $ python generate_token.py \
+           --protein_list_file ./protein_list.txt
+           --interpro_path ./esm3_UniDRBP40_InterPro.json
+           --pdb_dir ./pdb_dir
+           --ss_json_path ./esm3_DRBP_ss.json
+           --target_dir ./token_dir
 ```
-
-# Domain adaptive post-training
-Coming soon...
-
-# Binding site-informed preference optimization
-Coming soon...
-
+Then you will see the ProID_tokens.npz in [token_dir](./token_dir).
