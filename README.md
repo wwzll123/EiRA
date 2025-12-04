@@ -54,8 +54,7 @@ Protein editing under DNA conditions (EVO2 embedding).
 
 # Domain adaptive post-training
 - 1.Before starting the training, you should first read the [Tokenization Tutorial](./Tokenization) and prepare the tokens.
-- 2.The command should depend on the number of GPUs available to you.
-- 3.Run the following command.
+- 2.Run the following command depend on the number of GPUs available to you.
  ```
  $ torchrun --nproc_per_node=8 --master_port=29512 pretrain.py \
            --gpu 0,1,2,3,4,5,6,7
@@ -70,6 +69,15 @@ Protein editing under DNA conditions (EVO2 embedding).
 
 # Binding site-informed preference optimization
 - 1.Before starting the DPO, you should first read the [DPO Tokenization Tutorial](./DPO_Tokenization) and prepare the preference pair tokens.
+- 2.Run the following command depend on the number of GPUs available to you.
+
+ ```
+ $ torchrun --nproc_per_node=8 --master_port=29512 DPO_train.py \
+           --gpu 0,1,2,3,4,5,6,7
+           --feature_dir "The path contains all preference pair token in .npz format"
+	       --lora_checkpoint_path "Path to the LoRA checkpoint of EiRA"
+           --save_path "Checkpoint path to be saved"
+```
 
 # Citation
  ```
