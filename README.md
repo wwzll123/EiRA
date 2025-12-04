@@ -79,7 +79,7 @@ Protein editing under DNA conditions (EVO2 embedding).
            --save_path "Checkpoint path to be saved"
 ```
 
-# Citation
+# 📄 Citation
  ```
 @article {Zeng2025.09.02.673615,
 	author = {Zeng, Wenwu and Zou, Haitao and Li, Xiaoyu and Wang, Xiaoqi and Peng, Shaoliang},
