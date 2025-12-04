@@ -52,7 +52,7 @@ Protein editing under DNA conditions (EVO2 embedding).
            --DNA "Target DNA sequence, like AGCTCGC"
 ```
 
-# Domain adaptive post-training
+# ⚔️ Domain adaptive post-training
 - 1.Before starting the training, you should first read the [Tokenization Tutorial](./Tokenization) and prepare the tokens.
 - 2.Run the following command depend on the number of GPUs available to you.
  ```
