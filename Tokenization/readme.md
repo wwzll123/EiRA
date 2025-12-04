@@ -10,7 +10,7 @@
 
 # Generate token
 
-We saved the five token (sequence, strucuture, ss, sa, and InterPro annotation) in the npz format of numpy using the following commands.
+We saved the five token (sequence, structure, ss, sa, and InterPro annotation) in the npz format of numpy using the following commands.
 
  ```
  $ python generate_token.py \
