@@ -10,7 +10,7 @@ The source code and data of EiRA
 - 1.Download the source code in this repository.
 - 2.Download the weights of EiRA at [https://huggingface.co/zengwenwu/EiRA](https://huggingface.co/zengwenwu/EiRA/tree/main), and make sure they locate in the same folder.
 
-| name | description | size |
+| Name | Description | Size |
 |:--------|:--------:|-------:|
 | DNAbinder_lora_ft32_DNAlen50_cross_att_DNAtransformer_DNAbinder.pth | DNA transformer and Cross attention weights of DNA-informed EiRA | 2.23G |
 | EiRA_checkpoint DNAbinder_lora_ft32 DNAlen50.zip | LoRA weighht of DNA-informed EiRA | 23.9M |
