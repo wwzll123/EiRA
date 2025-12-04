@@ -9,6 +9,7 @@ The source code and data of EiRA
 # Installation:
 - 1.Download the source code in this repository.
 - 2.Download the weights of EiRA at [https://huggingface.co/zengwenwu/EiRA](https://huggingface.co/zengwenwu/EiRA/tree/main), and make sure they locate in the same folder.
+- 3.Unzip all .zip packages.
 
 | Name | Description | Size |
 |:--------|:--------:|-------:|
