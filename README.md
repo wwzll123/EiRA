@@ -69,7 +69,7 @@ Protein editing under DNA conditions (EVO2 embedding).
 ```
 
 # Binding site-informed preference optimization
-Coming soon...
+- 1.Before starting the training, you should first read the [DPO Tokenization tutorial](./DPO_Tokenization) and prepare the preference pair tokens.
 
 # Citation
  ```
